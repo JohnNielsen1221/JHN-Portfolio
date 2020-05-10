@@ -87,10 +87,10 @@ header nav ul li a:hover {
 }
 .headshot img {
     display: flex;
-    max-width: 350px;
-    height: 450px;
+    width: 25%;
 }
 .hero-subtitle {
+    display: flex;
     width: 50%;
     text-align: right;
     margin: 3.5%;
@@ -107,6 +107,7 @@ header nav ul li a:hover {
 /* About Me Start */
 .intro div {
     border-left: 5px solid var(--tertiary-color);
+    display: flex;
 }
 .intro p {
     line-height: 1.7;
@@ -125,7 +126,7 @@ header nav ul li a:hover {
     border-left: 5px solid var(--tertiary-color);
 }
 .project-grid-container {
-    width: 80%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -214,7 +215,7 @@ div::after {
     border-left: 5px solid var(--tertiary-color);
     justify-content: center;
 }
-
+/* Reume End*/
 /* Utility Classes */
 .section-title {
     font-size: 48px;
@@ -230,5 +231,100 @@ div::after {
 .flex-row {
     display: flex;
 }
-
-
+/*Utility Classes End */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .headshot, .hero-subtitle {
+        align-items: center;
+        width: 100%
+    }
+    .hero-subtitle {
+        text-align: center;
+    }
+    .section-title {
+        width: 25%;
+    }
+}
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    .headshot img {
+        width: 100%;
+    }
+    .hero-subtitle h2 {
+        margin: 0 auto;
+    }
+    .section-title {
+        width: 100%;
+        flex: 1 100%;
+        text-align: center;
+    }
+    .intro div, .project-grid-wrapper, .contact-div, .resume-file div {
+        border-left: transparent;
+    }
+    .intro div {
+        display: inline;
+    }
+    .contact-div {
+        display: inline;
+        text-align: center;
+    }
+    .contact-div div {
+        border-bottom: transparent;
+    }
+}
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        border-bottom: transparent;
+    }
+    .hero-subtitle {
+        bottom: 200px;
+    }
+    .projects {
+        align-items: center;
+    }
+    .project-grid-wrapper {
+        display: inline;
+        height: 100%;
+    }
+    .project-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }   
+    .contact-div div {
+        font-size: 4vw; 
+    } 
+    .section-title {
+        font-size: 48px;
+        color: var(--tertiary-color);
+        
+        padding-right: 0px;
+        text-align: center;
+        margin: 0 auto 35px auto;
+        float: left;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .resume-file div {
+        display: inline;
+    }
+}
