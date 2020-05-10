@@ -21,7 +21,7 @@ Should scale appropriately with different screen sizes.
 Project is: _complete_ (for now)
 
 ## Link
-JohnNielsen1221.github.io/JHN-Portfolio.io
+JohnNielsen1221.github.io/JHN-Portfolio/
 
 ## Contact
 Created by John Nielsen - johnhayesnielsen@gmail.com
