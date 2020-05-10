@@ -15,6 +15,7 @@ This page is made to show off my abilites as a web developer, as well as get any
 Top nav bar will take you to each section within the page.
 Each work grid section will take you to the active webpage of completed work I have done. (Will fill-in the rest once I have more projects completed).
 Clicking on LinkedIn will take you to my LinkedIn page.
+Should scale appropriately with different screen sizes.
 
 ## Status
 Project is: _complete_ (for now)
