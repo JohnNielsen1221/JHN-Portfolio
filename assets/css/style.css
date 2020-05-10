@@ -73,7 +73,7 @@ header nav ul li a:hover {
 .hero {
     background-image: url('../images/wood-background.jpg');
     background-size: cover;
-    background-position: 80%;
+    background-position: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -96,14 +96,12 @@ header nav ul li a:hover {
     margin: 3.5%;
     font-size: 24px;
     line-height: 1.5;
+    position: absolute;
+    right: 0;
 }
 .hero-subtitle h2 {
     font-style: italic;
     text-shadow: 0 0 10px var(--primary-color);
-    position: absolute;
-    padding: 15px;
-    bottom: 0;
-    right: 15;
 }
 /* Hero End */
 /* About Me Start */
@@ -117,6 +115,106 @@ header nav ul li a:hover {
     margin: 0 auto;
     text-align: left;
 }
+/* About Me End */
+/* Work Grid Start */
+.project-grid-wrapper {
+    display: flex;
+    width: 75%;
+    height: 300px;
+    justify-content: center;
+    border-left: 5px solid var(--tertiary-color);
+}
+.project-grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    font-size: 1.2rem;
+}
+.grid-item {
+    padding: 15px 0;
+    border: 3px solid var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    color: var(--secondary-color);
+    text-shadow: 0 0 1px rgba(255,255,255,0.5);
+    position: relative;
+    z-index: 8888;
+    text-decoration: none;
+}
+.grid-item h3 {
+    position: relative;
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+.grid-item h3 span {
+    font-size: 15px;
+}
+
+.item-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url('../images/run-buddy-screenshot.jpg');
+    background-size: cover;
+}
+.item-2 {
+    background-image: url('../images/horiseon-screenshot-2.png');
+    background-size: cover;
+}
+.item-3 {
+    background-image: url('../images/questionmark.jpg');
+    background-size: cover;
+}
+.item-4 {
+    background-image: url('../images/questionmark.jpg');
+    background-size: cover;
+}
+.item-5 {
+    background-image: url('../images/questionmark.jpg');
+    background-size: cover;
+}
+article:hover div::after {
+    opacity: 1;
+}
+div::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+/* Work Grid End */
+/* Contact Me Start */
+.contact-div {
+    display: flex;
+    border-left: 5px solid var(--tertiary-color);
+    justify-content: space-around;
+    align-content: center;
+}
+.contact-div div {
+    padding: 10px 15px;
+    margin: 25px;
+    font-weight: lighter;
+    font-size: 1.6vw;
+    border-bottom: 5px solid var(--primary-color);
+}
+.contact-div a {
+    text-decoration: none;
+}
+/* Contact Me End */
+/* Resume Start */
+.resume-file div {
+    display: flex;
+    border-left: 5px solid var(--tertiary-color);
+    justify-content: center;
+}
+
 /* Utility Classes */
 .section-title {
     font-size: 48px;
