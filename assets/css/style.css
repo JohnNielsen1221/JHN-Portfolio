@@ -157,7 +157,7 @@ header nav ul li a:hover {
 .item-1 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url('../images/run-buddy-screenshot.jpg');
+    background-image: url('../images/ddscreenshot1.png');
     background-size: cover;
 }
 .item-2 {
@@ -165,7 +165,7 @@ header nav ul li a:hover {
     background-size: cover;
 }
 .item-3 {
-    background-image: url('../images/questionmark.jpg');
+    background-image: url('../images/run-buddy-screenshot.jpg');
     background-size: cover;
 }
 .item-4 {
